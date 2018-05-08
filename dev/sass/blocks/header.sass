@@ -35,7 +35,7 @@
 			transition: color .5s
 
 			&.is-selected, &:hover
-				color: $color-dark
+				color: $color-darken
 				border: none
 
 	// Second nav toggle icon
@@ -65,23 +65,18 @@
 		&.is-closed
 			display: block
 		&:hover, &:hover:before
-			color: $color-dark
+			color: $color-darken
 
 // Second nav with anchor links and logo
 .second-nav
 	position: relative
 	min-height: 80px
-	background-color: $color-light
+	//background-color: $color-light
+	background-color: $color-lightblack
 	+gs()
-	margin-top: 40px
-	box-shadow: 0 1px 2px -1px $color-dark
+	margin-top: 0px
+	box-shadow: 0 1px 2px -1px $color-darken
 	transition: all .5s
-
-
-	&.is-closed
-		margin-top: -40px
-		@media screen and (max-width: 800px)
-			margin-top: -100%
 
 	&__logo
 		display: block
@@ -122,7 +117,7 @@
 				width: 50px
 				height: 5px
 				background-color: transparent
-				box-shadow: 0 1px 2px -1px $color-dark
+				box-shadow: 0 1px 2px -1px $color-darken
 				transform: rotate(-37deg)
 			&:before
 				content: ""
@@ -132,7 +127,7 @@
 				width: 50px
 				height: 5px
 				background-color: transparent
-				box-shadow: 0 1px 2px -1px $color-dark
+				box-shadow: 0 1px 2px -1px $color-darken
 				transform: rotate(37deg)
 
 
@@ -150,7 +145,7 @@
 			margin: 0 9px
 			display: block
 			margin: auto
-			border-bottom: 1px dashed $color-darken
+			border-bottom: 1px dashed $color-white
 
 		& a
 			line-height: 80px
@@ -160,7 +155,8 @@
 				font-size: 18px
 				line-height: 2
 				border-bottom: none
+			color: $color-dark
 
 			&.is-selected, &:hover
-				color: $color-darken
+				color: $color-white
 				border: none
