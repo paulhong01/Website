@@ -48,7 +48,7 @@
           if (target.length) {
             $('html,body').animate({
               scrollTop: target.offset().top - navHeight
-            }, 1000);
+          }, 1000); 
             return false;
           }
         }

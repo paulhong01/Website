@@ -5,67 +5,6 @@
 	width: 100%
 
 // First navbar with languages menu and second nav toggle icon
-.first-nav
-	position: absolute
-	z-index: 200
-	top: 0
-	left: 0
-	height: 40px
-	overflow: hidden
-	background-color: $color-accent
-	+gs()
-	box-shadow: 0 1px 2px -1px $color-dark
-
-	&__languages,
-	&__links
-		+gs-column(9)
-		@media screen and (max-width: 600px)
-			+gs-column(11)
-		& li
-			display: inline-block
-			margin: 0 10px
-			@media screen and (max-width: 800px)
-				margin: 0 7px
-		& a
-			color: $color-light
-			font-family: $font-serif
-			font-style: italic
-			line-height: 40px
-			border-color: $color-light
-			transition: color .5s
-
-			&.is-selected, &:hover
-				color: $color-darken
-				border: none
-
-	// Second nav toggle icon
-	&__navcontrol
-		display: none
-		+gs-column(3)
-		color: $color-light
-		line-height: 40px
-		text-align: right
-		border: none
-		transition: color .5s
-		@media screen and (max-width: 600px)
-			+gs-column(1)
-			margin-left: 0
-			font-size: 0
-
-		&:before
-			display: inline-block
-			margin-right: 10px
-			color: $color-light
-			font-size: 20px
-			transition: color .5s
-			@media screen and (max-width: 600px)
-				margin-right: 0
-
-		&.is-open,
-		&.is-closed
-			display: block
-		&:hover, &:hover:before
-			color: $color-darken
 
 // Second nav with anchor links and logo
 .second-nav
