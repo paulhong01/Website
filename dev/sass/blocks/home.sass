@@ -15,14 +15,25 @@
 		clear: both
 		box-shadow: 0 0 2px 1px $color-dark
 
+	//&__bg
+		position: absolute
+		min-width: 100%
+		min-height: 100%
+		z-index: 0
+		background: transparent url('../images/bg-pattern.jpg') center 0 no-repeat
+		background-attachment: fixed
+		background-size: cover
 	&__bg
 		position: absolute
 		min-width: 100%
 		min-height: 100%
 		z-index: 0
-		background: transparent url('../images/bg.jpg') center 0 no-repeat
+		background-color: transparent
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000)
+		zoom: 1
+		background-image: url($img-overlay_bg)
+		background-repeat: repeat
 		background-attachment: fixed
-		background-size: cover
 
 	&__overlay
 		position: relative
