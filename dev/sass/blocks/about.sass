@@ -31,9 +31,50 @@
 
 		& &-status
 			margin-top: 20px
-			padding-top: 10px
+			padding-top: 20px
 			font-weight: normal
 			border-top: 1px dashed $color-darken
 			& span
 				font-weight: bold
 				text-transform: uppercase
+
+// icon
+.about-info-social
+	position: relative
+	padding-top: 10px
+	background-color: $color-light
+	overflow: hidden
+	white-space: nowrap
+	text-align: center
+	border-top: 0.5px dashed $color-darken
+	padding-left: 280px
+
+	& li
+		display: block
+		width: 40px
+		height: 50px
+		text-align: center
+		float: left
+		overflow: hidden
+		background-color: $color-accent
+		border: 0.5px dashed $color-black
+
+		&:hover
+			background-color: transparent
+		& a
+			display: inline-block
+			width: 40px
+			color: $color-light
+			font-size: 0
+			cursor: default
+			border: none
+
+			&:before
+				display: inline-block
+				width: 40px
+				text-align: center
+				font-size: 25px
+				line-height: 50px
+				color: $color-light
+			&:hover:before
+				color: $color-dark
