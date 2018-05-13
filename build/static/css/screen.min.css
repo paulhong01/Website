@@ -722,8 +722,9 @@ a:hover {
 	text-align: center;
 	float: left;
 	overflow: hidden;
-	background-color: #FFA726;
+	background-color: #bdc3c7;
 	border: 0.5px dashed #272727;
+	margin-right: 10px;
 }
 
 .about-info-social li:hover {
