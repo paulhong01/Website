@@ -47,21 +47,19 @@
 	white-space: nowrap
 	text-align: center
 	border-top: 0.5px dashed $color-darken
-	padding-left: 280px
+	padding-left: 280px 
 
 	& li
 		display: block
-		width: 40px
+		width: 50px
 		height: 50px
-		text-align: center
+		text-align: light
 		float: left
 		overflow: hidden
 		background-color: $color-darken
-		border: 0.5px dashed $color-black
-		margin-right: 10px
+		border: 0.5px dashed $color-white
+		margin-right: 15px
 
-		&:hover
-			background-color: transparent
 		& a
 			display: inline-block
 			width: 40px
@@ -79,3 +77,4 @@
 				color: $color-light
 			&:hover:before
 				color: $color-dark
+				cursor: pointer

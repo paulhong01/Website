@@ -717,18 +717,14 @@ a:hover {
 
 .about-info-social li {
 	display: block;
-	width: 40px;
+	width: 50px;
 	height: 50px;
-	text-align: center;
+	text-align: light;
 	float: left;
 	overflow: hidden;
 	background-color: #bdc3c7;
-	border: 0.5px dashed #272727;
-	margin-right: 10px;
-}
-
-.about-info-social li:hover {
-	background-color: transparent;
+	border: 0.5px dashed #FFFFFF;
+	margin-right: 15px;
 }
 
 .about-info-social li a {
@@ -751,6 +747,7 @@ a:hover {
 
 .about-info-social li a:hover:before {
 	color: #7b7b7b;
+	cursor: pointer;
 }
 
 .services {
