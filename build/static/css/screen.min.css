@@ -14,6 +14,14 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'fontello2';
+	src: url("../fonts/ip/font/fontello2.eot");
+	src: url("../fonts/ip/font/fontello2.eot#iefix") format("embedded-opentype"), url("../fonts/ip/font/fontello2.woff") format("woff"), url("../fonts/ip/font/fontello2.ttf") format("truetype"), url("../fonts/ip/font/fontello2.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
 html,
 body,
 div,
@@ -293,7 +301,7 @@ a:hover {
 }
 
 .icon:before {
-	font-family: "ip", "fontello";
+	font-family: "ip", "fontello", "fontello2";
 	font-style: normal;
 	font-weight: normal;
 }
@@ -408,6 +416,14 @@ a:hover {
 
 .icon_git:before {
 	content: "\e81b";
+}
+
+.icon_graduation:before {
+	content: "\e81c";
+}
+
+.icon_study:before {
+	content: "\e81d";
 }
 
 .progressjs-inner {
@@ -712,7 +728,7 @@ a:hover {
 	white-space: nowrap;
 	text-align: center;
 	border-top: 0.5px dashed #bdc3c7;
-	padding-left: 280px;
+	padding-left: 260px;
 }
 
 .about-info-social li {
@@ -722,7 +738,6 @@ a:hover {
 	text-align: light;
 	float: left;
 	overflow: hidden;
-	background-color: #bdc3c7;
 	border: 0.5px dashed #FFFFFF;
 	margin-right: 15px;
 }
@@ -730,7 +745,7 @@ a:hover {
 .about-info-social li a {
 	display: inline-block;
 	width: 40px;
-	color: #ecf0f1;
+	color: #bdc3c7;
 	font-size: 0;
 	cursor: default;
 	border: none;
@@ -742,11 +757,11 @@ a:hover {
 	text-align: center;
 	font-size: 25px;
 	line-height: 50px;
-	color: #ecf0f1;
+	color: #7b7b7b;
 }
 
 .about-info-social li a:hover:before {
-	color: #7b7b7b;
+	color: #842b00;
 	cursor: pointer;
 }
 
@@ -1882,4 +1897,3 @@ p {
 }
 
 }
-
