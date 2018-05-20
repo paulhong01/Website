@@ -16,7 +16,7 @@ body
 	+clearfix
 
 .common-section
-	padding-top: 100px
+	padding-top: 50px
 	+gs()
 
 	@media screen and (max-width: 800px)
@@ -29,6 +29,22 @@ body
 
 		@media screen and (max-width: 800px)
 			padding-bottom: 30px
+
+.common-section-education
+	padding-top: 70px
+	+gs()
+
+	@media screen and (max-width: 800px)
+		padding-top: 50px
+
+	&__header
+		padding-bottom: 50px
+		text-align: center
+		+gs-column(12)
+
+		@media screen and (max-width: 800px)
+			padding-bottom: 30px
+
 
 .grid-container
 	+gs()

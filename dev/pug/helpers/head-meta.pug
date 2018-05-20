@@ -4,7 +4,7 @@ mixin head-meta()
 	meta(name="viewport", content="width=device-width, initial-scale=1")
 
 	//- Site meta information
-	title= pageTitle ? pageTitle + config.site.titleDelim + config.site.title : config.site.title
+	title= pageTitle
 	meta(name="description", content= pageDescription ? pageDescription : config.site.description)
 	meta(name="keywords", content= pageKeywords ? pageKeywords : config.site.keywords)
 

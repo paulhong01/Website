@@ -193,7 +193,7 @@ body {
 }
 
 .common-section {
-	padding-top: 100px;
+	padding-top: 50px;
 	width: 100%;
 	margin: 0 0;
 	clear: both;
@@ -208,6 +208,39 @@ body {
 }
 
 .common-section__header {
+	padding-bottom: 50px;
+	text-align: center;
+	float: left;
+	width: 98%;
+	width: -webkit-calc(100% - 40px);
+	width: calc(100% - 40px);
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-left: -webkit-calc(20px);
+	margin-left: calc(20px);
+	margin-right: -webkit-calc(20px);
+	margin-right: calc(20px);
+	height: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.common-section-education {
+	padding-top: 70px;
+	width: 100%;
+	margin: 0 0;
+	clear: both;
+}
+
+.common-section-education:before,
+.common-section-education:after {
+	display: block;
+	content: '';
+	clear: both;
+	height: 0;
+}
+
+.common-section-education__header {
 	padding-bottom: 50px;
 	text-align: center;
 	float: left;
@@ -771,6 +804,43 @@ a:hover {
 .about-info-social li a:hover:before {
 	color: #842b00;
 	cursor: pointer;
+}
+
+.education {
+	list-style-type: none;
+	padding-left: 130px;
+}
+
+.education__item {
+	margin-bottom: 50px;
+}
+
+.education__itemicon.icon_graduation {
+	padding-left: 0px;
+}
+
+.education__item h4 {
+	margin-left: 80px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.education__item p {
+	margin-left: 80px;
+}
+
+.education__item:before {
+	margin-top: 30px;
+	float: left;
+	color: #bdc3c7;
+	font-size: 60px;
+	-webkit-transition: color .5s;
+	transition: color .5s;
+}
+
+.education__item:hover:before {
+	color: #FFA726;
 }
 
 .services {
@@ -1636,6 +1706,14 @@ h4 {
 	padding-bottom: 30px;
 }
 
+.common-section-education {
+	padding-top: 50px;
+}
+
+.common-section-education__header {
+	padding-bottom: 30px;
+}
+
 h1 {
 	font-size: 50px;
 }
@@ -1696,6 +1774,26 @@ p {
 	margin-top: 0;
 	margin-bottom: 0;
 	float: none;
+}
+
+.education {
+	float: left;
+	width: 98%;
+	width: -webkit-calc(100% - 40px);
+	width: calc(100% - 40px);
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-left: -webkit-calc(20px);
+	margin-left: calc(20px);
+	margin-right: -webkit-calc(20px);
+	margin-right: calc(20px);
+	height: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.education__item {
+	margin-bottom: 30px;
 }
 
 .services {
