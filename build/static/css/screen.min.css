@@ -193,7 +193,7 @@ body {
 }
 
 .common-section {
-	padding-top: 50px;
+	padding-bottom: 70px;
 	width: 100%;
 	margin: 0 0;
 	clear: both;
@@ -227,6 +227,7 @@ body {
 
 .common-section-education {
 	padding-top: 70px;
+	padding-bottom: 70px;
 	width: 100%;
 	margin: 0 0;
 	clear: both;
