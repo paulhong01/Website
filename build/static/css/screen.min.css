@@ -514,9 +514,56 @@ a:hover {
 	width: 100%;
 }
 
+.first-nav {
+	display: none;
+	position: absolute;
+	z-index: 200;
+	top: 0;
+	left: 0;
+	height: 40px;
+	overflow: hidden;
+	background-color: #FFA726;
+	width: 100%;
+	margin: 0 0;
+	clear: both;
+	-webkit-box-shadow: 0 1px 2px -1px #7b7b7b;
+	box-shadow: 0 1px 2px -1px #7b7b7b;
+}
+
+.first-nav:before,
+.first-nav:after {
+	display: block;
+	content: '';
+	clear: both;
+	height: 0;
+}
+
+.first-nav__languages,
+.first-nav__links {
+	float: left;
+	width: 73%;
+	width: -webkit-calc(75% - 40px);
+	width: calc(75% - 40px);
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-left: -webkit-calc(20px);
+	margin-left: calc(20px);
+	margin-right: -webkit-calc(20px);
+	margin-right: calc(20px);
+	height: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.first-nav__languages li,
+.first-nav__links li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
 .second-nav {
 	position: relative;
-	min-height: 80px;
+	min-height: 10%;
 	background-color: #3c3c3c;
 	width: 100%;
 	margin: 0 0;
@@ -770,7 +817,7 @@ a:hover {
 	white-space: nowrap;
 	text-align: center;
 	border-top: 0.5px dashed #bdc3c7;
-	padding-left: 260px;
+	padding-left: 30%;
 }
 
 .about-info-social li {
@@ -809,15 +856,24 @@ a:hover {
 
 .education {
 	list-style-type: none;
-	padding-left: 130px;
+	padding-left: 10%;
+	float: left;
+	width: 123%;
+	width: -webkit-calc(125% - 40px);
+	width: calc(125% - 40px);
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-left: -webkit-calc(20px);
+	margin-left: calc(20px);
+	margin-right: -webkit-calc(20px);
+	margin-right: calc(20px);
+	height: auto;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .education__item {
 	margin-bottom: 50px;
-}
-
-.education__itemicon.icon_graduation {
-	padding-left: 0px;
 }
 
 .education__item h4 {
@@ -1735,11 +1791,47 @@ p {
 	font-size: 16px;
 }
 
+.first-nav {
+	display: inline-block;
+	color: #FFFFFF;
+}
+
+.first-nav__languages li,
+.first-nav__links li {
+	margin: 0 7px;
+}
+
+.first-nav__languages a,
+.first-nav__links a {
+	color: #FFFFFF;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-style: italic;
+	line-height: 40px;
+	border-color: #FFFFFF;
+	-webkit-transition: color .5s;
+	transition: color .5s;
+	padding-left: 10px;
+}
+
+.first-nav__languages a.is-selected,
+.first-nav__languages a:hover,
+.first-nav__links a.is-selected,
+.first-nav__links a:hover {
+	color: #ecf0f1;
+	border: none;
+}
+
+.second-nav.is-closed {
+	margin-top: -300px;
+}
+
 .menu {
+	height: 10%;
 	text-align: center;
 }
 
 .menu li {
+	padding-top: 20px;
 	margin: 0 9px;
 	display: block;
 	margin: auto;
@@ -1748,7 +1840,7 @@ p {
 
 .menu li a {
 	font-size: 18px;
-	line-height: 2;
+	line-height: 0.5;
 	border-bottom: none;
 }
 
@@ -1761,19 +1853,7 @@ p {
 }
 
 .about-card {
-	float: left;
-	width: 98%;
-	width: -webkit-calc(100% - 40px);
-	width: calc(100% - 40px);
-	margin-left: 1%;
-	margin-right: 1%;
-	margin-left: -webkit-calc(20px);
-	margin-left: calc(20px);
-	margin-right: -webkit-calc(20px);
-	margin-right: calc(20px);
-	height: auto;
-	margin-top: 0;
-	margin-bottom: 0;
+	width: 150%;
 	float: none;
 }
 
@@ -1791,10 +1871,15 @@ p {
 	height: auto;
 	margin-top: 0;
 	margin-bottom: 0;
+	padding-left: 1%;
 }
 
 .education__item {
 	margin-bottom: 30px;
+}
+
+.education__item .icon.icon_graduation {
+	padding-left: 0px;
 }
 
 .services {
@@ -1905,8 +1990,21 @@ p {
 
 @media screen and (max-width: 600px) {
 
-.home-section__header {
-	padding: 100px 0 300px;
+.first-nav__languages,
+.first-nav__links {
+	float: left;
+	width: 89.66667%;
+	width: -webkit-calc(91.66667% - 40px);
+	width: calc(91.66667% - 40px);
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-left: -webkit-calc(20px);
+	margin-left: calc(20px);
+	margin-right: -webkit-calc(20px);
+	margin-right: calc(20px);
+	height: auto;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .advantages h2:before,
@@ -2001,6 +2099,30 @@ p {
 
 .testimonials__item blockquote {
 	margin-left: 0;
+}
+
+}
+
+@media screen and (max-width: 400px) {
+
+.about-card {
+	padding-left: 30px;
+	width: 200%;
+	float: none;
+}
+
+.about-info-social {
+	padding-left: 10%;
+}
+
+}
+
+@media screen and (max-width: 300px) {
+
+.about-card {
+	padding-left: 25px;
+	width: 250%;
+	float: none;
 }
 
 }

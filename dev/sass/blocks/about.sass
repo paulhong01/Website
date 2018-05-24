@@ -3,14 +3,25 @@
 	position: relative
 	margin-top: -400px
 	padding-right: 200px
-
+	//width: 100%
 // Card with content, half-positioned over hero image section
 .about-card
 	box-shadow: 2px 2px 4px -2px $color-dark
 	+gs-column(9)
 	float: right
 	@media screen and (max-width: 800px)
-		+gs-column(12)
+		//+gs-column(12)
+		width: 150%
+		float: none
+	@media screen and (max-width: 400px)
+		//+gs-column(12)
+		padding-left: 30px
+		width: 200%
+		float: none
+	@media screen and (max-width: 300px)
+		//+gs-column(12)
+		padding-left: 25px
+		width: 250%
 		float: none
 
 	&__header
@@ -47,7 +58,10 @@
 	white-space: nowrap
 	text-align: center
 	border-top: 0.5px dashed $color-darken
-	padding-left: 260px
+	padding-left: 30%
+
+	@media screen and (max-width: 400px)
+		padding-left: 10%
 
 	& li
 		display: block
