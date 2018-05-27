@@ -1,0 +1,56 @@
+// experiences list
+.experiences
+	list-style-type: None
+	padding-left: 13%
+	margin-left: 10px
+	+gs-column(12)
+	@media screen and (max-width: 800px)
+		+gs-column(12)
+
+	&__item
+		margin-bottom: 20px
+		border-left: 3px solid $color-darken
+		position: relative
+		@media screen and (max-width: 800px)
+			margin-bottom: 15px
+
+		& h4
+			margin-left: 50px
+			margin-bottom: 10px
+			text-transform: uppercase
+			font-weight: bold
+
+			&:before
+				border-left: 3px solid $color-black
+
+
+		& p
+			margin-left: 50px
+
+		// Service icon with state change on hover
+		&:before
+			position: absolute
+			left: -10px
+			top: -18px
+			border: 3px solid $color-darken
+			color: $color-darken
+			background: $color-darken
+			content: " "
+			height: 12px
+			width: 12px
+			border-radius: 100%
+
+		&:hover:before
+			position: absolute
+			left: -10px
+			top: -18px
+			border: 3px solid $color-accent
+			background-color: $color-accent
+			color: $color-accent
+			content: " "
+			height: 12px
+			width: 12px
+			border-radius: 100%
+
+		&:hover
+			border-left: 3px solid $color-accent
