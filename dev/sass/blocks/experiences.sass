@@ -20,12 +20,31 @@
 			text-transform: uppercase
 			font-weight: bold
 
-			&:before
-				border-left: 3px solid $color-black
+		& h4, .icon
+			display: inline-block
+			margin-bottom: 10px
 
+			@media screen and (max-width: 800px)
+				display: none
+
+		& .icon
+			position: absolute
+			left: 70%
+
+			@media scrren and (max-width: 800px)
+				display: none
+				position: relative
+				left: 0%
 
 		& p
 			margin-left: 50px
+			margin-bottom: 5px
+
+		& p.time
+			position: absolute
+			left: 70%
+			@media scrren and (max-width: 800px)
+				display: none
 
 		// Service icon with state change on hover
 		&:before

@@ -885,6 +885,7 @@ a:hover {
 
 .education__item p {
 	margin-left: 80px;
+	margin-bottom: 5px;
 }
 
 .education__item:before {
@@ -932,12 +933,25 @@ a:hover {
 	font-weight: bold;
 }
 
-.experiences__item h4:before {
-	border-left: 3px solid #272727;
+.experiences__item h4,
+.experiences__item .icon {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.experiences__item .icon {
+	position: absolute;
+	left: 70%;
 }
 
 .experiences__item p {
 	margin-left: 50px;
+	margin-bottom: 5px;
+}
+
+.experiences__item p.time {
+	position: absolute;
+	left: 70%;
 }
 
 .experiences__item:before {
@@ -1850,6 +1864,11 @@ p {
 	margin-bottom: 15px;
 }
 
+.experiences__item h4,
+.experiences__item .icon {
+	display: none;
+}
+
 .process__step-icon {
 	width: 160px;
 	height: 160px;
@@ -1928,6 +1947,20 @@ p {
 
 .contact-info__vcard {
 	margin-left: 0;
+}
+
+}
+
+@media scrren and (max-width: 800px) {
+
+.experiences__item .icon {
+	display: none;
+	position: relative;
+	left: 0%;
+}
+
+.experiences__item p.time {
+	display: none;
 }
 
 }
