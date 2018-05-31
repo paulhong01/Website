@@ -1187,15 +1187,96 @@ a:hover {
 	color: #bdc3c7;
 }
 
-.projects-wrap {
+.projects {
+	list-style-type: none;
+	margin-left: 10px;
+	float: left;
+	width: 98%;
+	width: -webkit-calc(100% - 40px);
+	width: calc(100% - 40px);
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-left: -webkit-calc(20px);
+	margin-left: calc(20px);
+	margin-right: -webkit-calc(20px);
+	margin-right: calc(20px);
+	height: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.projects__item {
+	min-height: 180px;
+	margin-bottom: 40px;
+	padding: 40px 20px;
+	background-color: #ecf0f1;
+	-webkit-box-shadow: 2px 2px 4px -2px #7b7b7b;
+	box-shadow: 2px 2px 4px -2px #7b7b7b;
+}
+
+.projects__item img {
+	display: block;
+	width: 100px;
+	height: 100px;
+	float: left;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	opacity: .6;
+	-webkit-transition: opacity .5s;
+	transition: opacity .5s;
+}
+
+.projects__item:hover img {
+	opacity: 1;
+}
+
+.projects__item h3 {
+	margin-left: 140px;
+	margin-bottom: 30px;
+}
+
+.projects__item blockquote {
+	margin-left: 140px;
+}
+
+.projects__item blockquote p {
+	position: relative;
+	margin-left: 25px;
+}
+
+.projects__item blockquote p:before {
+	position: absolute;
+	top: -5px;
+	left: -25px;
+	font-size: 20px;
+	color: #FFA726;
+}
+
+.projects__item blockquote cite {
+	display: block;
+	margin-top: 20px;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.projects__item blockquote cite span.name {
+	color: #FFA726;
+}
+
+.projects__item blockquote cite span.role {
+	color: #bdc3c7;
+	white-space: nowrap;
+}
+
+.testimonials-wrap {
 	position: relative;
 	width: 100%;
 	clear: both;
 	overflow: hidden;
 }
 
-.projects-wrap:before,
-.projects-wrap:after {
+.testimonials-wrap:before,
+.testimonials-wrap:after {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -1206,19 +1287,19 @@ a:hover {
 	clear: both;
 }
 
-.projects-wrap:before {
+.testimonials-wrap:before {
 	top: 0;
 	-webkit-box-shadow: 0 0 2px 1px #7b7b7b;
 	box-shadow: 0 0 2px 1px #7b7b7b;
 }
 
-.projects-wrap:after {
+.testimonials-wrap:after {
 	bottom: 0;
 	-webkit-box-shadow: 0 0 2px 1px #7b7b7b;
 	box-shadow: 0 0 2px 1px #7b7b7b;
 }
 
-.projects {
+.testimonials {
 	float: left;
 	width: 100%;
 	margin-left: 0;
@@ -1228,7 +1309,7 @@ a:hover {
 	margin-bottom: 0;
 }
 
-.projects__item {
+.testimonials__item {
 	float: left;
 	width: 25%;
 	margin-left: 0;
@@ -1242,7 +1323,7 @@ a:hover {
 	overflow: hidden;
 }
 
-.projects__item img {
+.testimonials__item img {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -1252,7 +1333,7 @@ a:hover {
 	margin: 0;
 }
 
-.projects__item figcaption {
+.testimonials__item figcaption {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1269,7 +1350,7 @@ a:hover {
 	transition: opacity .5s;
 }
 
-.projects__item figcaption:after {
+.testimonials__item figcaption:after {
 	content: "";
 	display: inline-block;
 	width: 0;
@@ -1277,7 +1358,7 @@ a:hover {
 	vertical-align: middle;
 }
 
-.projects__item figcaption a {
+.testimonials__item figcaption a {
 	display: inline-block;
 	width: 90%;
 	font-size: 25px;
@@ -1287,89 +1368,14 @@ a:hover {
 	border-bottom: none;
 }
 
-.projects__item figcaption a:before {
+.testimonials__item figcaption a:before {
 	margin-right: 5px;
 	font-size: 20px;
 }
 
-.projects__item:hover figcaption {
+.testimonials__item:hover figcaption {
 	visibility: visible;
 	opacity: 1;
-}
-
-.testimonials {
-	list-style-type: none;
-	float: left;
-	width: 48%;
-	width: -webkit-calc(50% - 40px);
-	width: calc(50% - 40px);
-	margin-left: 1%;
-	margin-right: 1%;
-	margin-left: -webkit-calc(20px);
-	margin-left: calc(20px);
-	margin-right: -webkit-calc(20px);
-	margin-right: calc(20px);
-	height: auto;
-	margin-top: 0;
-	margin-bottom: 0;
-}
-
-.testimonials__item {
-	min-height: 180px;
-	margin-bottom: 40px;
-	padding: 40px 20px;
-	background-color: #ecf0f1;
-	-webkit-box-shadow: 2px 2px 4px -2px #7b7b7b;
-	box-shadow: 2px 2px 4px -2px #7b7b7b;
-}
-
-.testimonials__item img {
-	display: block;
-	width: 100px;
-	height: 100px;
-	float: left;
-	-webkit-border-radius: 50%;
-	border-radius: 50%;
-	opacity: .6;
-	-webkit-transition: opacity .5s;
-	transition: opacity .5s;
-}
-
-.testimonials__item:hover img {
-	opacity: 1;
-}
-
-.testimonials__item blockquote {
-	margin-left: 140px;
-}
-
-.testimonials__item blockquote p {
-	position: relative;
-	margin-left: 25px;
-}
-
-.testimonials__item blockquote p:before {
-	position: absolute;
-	top: -5px;
-	left: -25px;
-	font-size: 20px;
-	color: #FFA726;
-}
-
-.testimonials__item blockquote cite {
-	display: block;
-	margin-top: 20px;
-	font-size: 20px;
-	text-transform: uppercase;
-}
-
-.testimonials__item blockquote cite span.name {
-	color: #FFA726;
-}
-
-.testimonials__item blockquote cite span.role {
-	color: #bdc3c7;
-	white-space: nowrap;
 }
 
 .contacts-section {
@@ -1654,11 +1660,15 @@ a:hover {
 
 @media screen and (max-width: 1200px) and (min-width: 800px) {
 
-.testimonials__item img {
+.projects__item img {
 	display: none;
 }
 
-.testimonials__item blockquote {
+.projects__item h3 {
+	margin-left: 0;
+}
+
+.projects__item blockquote {
 	margin-left: 0;
 }
 
@@ -1686,7 +1696,7 @@ h4 {
 	font-size: 75px;
 }
 
-.projects__item {
+.testimonials__item {
 	float: left;
 	width: 50%;
 	margin-left: 0;
@@ -1709,7 +1719,7 @@ h4 {
 
 @media screen and (max-width: 900px) {
 
-.testimonials__item blockquote cite {
+.projects__item blockquote cite {
 	font-size: 18px;
 }
 
@@ -1884,15 +1894,7 @@ p {
 	top: 160px;
 }
 
-.projects__item figcaption a {
-	font-size: 20px;
-}
-
-.projects__item figcaption a:before {
-	font-size: 18px;
-}
-
-.testimonials {
+.projects {
 	float: left;
 	width: 98%;
 	width: -webkit-calc(100% - 40px);
@@ -1908,8 +1910,16 @@ p {
 	margin-bottom: 0;
 }
 
-.testimonials__item {
+.projects__item {
 	margin-bottom: 20px;
+}
+
+.testimonials__item figcaption a {
+	font-size: 20px;
+}
+
+.testimonials__item figcaption a:before {
+	font-size: 18px;
 }
 
 .contacts-section {
@@ -2037,7 +2047,19 @@ p {
 	top: 120px;
 }
 
-.projects__item {
+.projects__item img {
+	display: none;
+}
+
+.projects__item h3 {
+	margin-left: 0;
+}
+
+.projects__item blockquote {
+	margin-left: 0;
+}
+
+.testimonials__item {
 	float: left;
 	width: 100%;
 	margin-left: 0;
@@ -2046,14 +2068,6 @@ p {
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-bottom: 75%;
-}
-
-.testimonials__item img {
-	display: none;
-}
-
-.testimonials__item blockquote {
-	margin-left: 0;
 }
 
 }
