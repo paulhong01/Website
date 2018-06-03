@@ -1,16 +1,17 @@
 // projects list
 .projects
 	list-style-type: none
+	padding-left: 1%
 	margin-left: 10px
-	+gs-column(12)
+	+gs-column(13)
 	@media screen and (max-width: 800px)
 		+gs-column(12)
 
 	// projects item
 	&__item
-		min-height: 180px
+		min-height: 250px
 		margin-bottom: 40px
-		padding: 40px 20px
+		padding: 30px 15px
 		background-color: $color-light
 		box-shadow: 2px 2px 4px -2px $color-dark
 		@media screen and (max-width: 800px)
@@ -18,30 +19,67 @@
 
 		& img
 			display: block
-			width: 100px
-			height: 100px
+			width: 250px
+			height: 200px
 			float: left
-			border-radius: 50%
 			opacity: .6
+			margin-top: auto
+			margin-bottom: auto
 			transition: opacity .5s
 			@media screen and (max-width: 1200px) and (min-width: 800px)
 				display: none
 			@media screen and (max-width: 480px)
 				display: none
 
+		& .App
+			& img
+				display: block
+				padding-left: 50px
+				width: 180px
+				height: 200px
+				float: left
+				opacity: .6
+				margin-top: auto
+				margin-bottom: auto
+				transition: opacity .5s
+				@media screen and (max-width: 1200px) and (min-width: 800px)
+					display: none
+				@media screen and (max-width: 480px)
+					display: none
+
+
 		&:hover img
 			opacity: 1
 
-		& h3
-			margin-left: 140px
-			margin-bottom: 30px
+		& h4
+			margin-left: 280px
+			margin-bottom: 10px
+			font-family: $font-serif
+			font-weight: bold
 			@media screen and (max-width: 1200px) and (min-width: 800px)
+				margin-left: 0px
+			@media screen and (max-width: 480px)
 				margin-left: 0
+		& p.technique
+			margin-left: 280px
+			margin-bottom: 10px
+			@media screen and (max-width: 1200px) and (min-width: 800px)
+				margin-left: 0px
+			@media screen and (max-width: 480px)
+				margin-left: 0
+		& p.content
+			margin-left: 280px
+			margin-bottom: 10px
+			line-height: 1.5em
+			font-style: normal
+			@media screen and (max-width: 1200px) and (min-width: 800px)
+				margin-left: 0px
 			@media screen and (max-width: 480px)
 				margin-left: 0
 
+
 		& blockquote
-			margin-left: 140px
+			margin-left: 170px
 			@media screen and (max-width: 1200px) and (min-width: 800px)
 				margin-left: 0
 			@media screen and (max-width: 480px)

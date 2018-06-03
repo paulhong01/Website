@@ -2,30 +2,41 @@ mixin projects()
 	section#projects.common-section
 		.container
 			header.common-section__header
-				h2 projects
-				p Aenean sagittis, turpis ac fermentum elementum, lorem urna lobortis eros, nec ultrices sem tortor sit amet elit
+				h2 Projects
+				h4 Some interested projects implemented in the past
 			.grid-container
 				ul.projects
 					li.projects__item
-						h3 SWIPT
-						img(src="static/images/logos/placeholder.png" alt="Lorem ipsum dolor sit amet")
-						blockquote
-							p.icon.icon_ql Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit orci est, id ultrices neque pretium quis. Quisque ut tortor eros. Curabitur id pellentesque dolor. Vivamus eu ullamcorper dolor, sit amet fringilla justo. Sed id eros interdum, ullamcorper diam ut, maximus lectus. Donec dapibus libero a euismod rutrum. Praesent at est ipsum.
-							cite
-								span.name Giles Posture,
-								span.role  CompanyName
-					li.projects__item
-						img(src="static/images/logos/placeholder.png" alt="Lorem ipsum dolor sit amet")
-						blockquote
-							p.icon.icon_ql In imperdiet odio metus, at ultricies tellus posuere at. Sed tempor ipsum a rhoncus tempor. Praesent orci massa, congue ut sapien ac, commodo lobortis massa. Nam ultricies hendrerit arcu, quis lacinia metus dictum eget. Praesent eu nisi sapien. Proin posuere nec lacus vitae vehicula. Curabitur accumsan nulla ut velit facilisis, eu ultricies ligula tristique
-							cite
-								span.name Sue Shei,
-								span.role  CompanyName
+						img(src="static/images/projects/Wireless_Power_Project.png")
+						h4 Wireless Power Transfer and Energy Harvesting Applications for Small Cells Networks
+						p.technique #[b Techniques]: MATLAB, Non-convex optimization, Non-linear Fractional Programming, Wireless Communications
+						p.content We are the first research team that applied both wireless power transfer applications and green power base station to enhance the energy efficiency of small cell networks. I took part in MAC layer protocol design, which proposed JWHRA algorithm for resource allocation policies. Since the problem is a non-convex optimization problem, fractional programming and some mathematic transformation are exploited to solve this problem. MATLAB simulations are implemented to evaluate the performance of proposed algorithm. The simulation results show that our proposed algorithm can enhance 15% energy efficiency while converging to optimal strategies in small number of iterations.
+						p.content  - #[a.email(href = "https://github.com/paulhong01/JWHRA" target="_blank") Source Code]
+						p.content  - #[a.email(href = "https://ieeexplore.ieee.org/document/7925823/" target="_blank") Publication]
 
 					li.projects__item
-						img(src="static/images/logos/placeholder.png" alt="Lorem ipsum dolor sit amet")
-						blockquote
-							p.icon.icon_ql In imperdiet odio metus, at ultricies tellus posuere at.
-							cite
-								span.name Desmond Eagle,
-								span.role  CompanyName
+						img(src="static/images/projects/Power_Project.gif")
+						h4 Power Control for Wireless Interference Network
+						p.technique #[b Techniques]: MATLAB, Non-convex optimization, Wireless Communications
+						p.content In this project, we proposed different algorithms to get the power allocation policies in the wireless interference networks under different signal-to-interference-plus-noise ratios (SINRs). Under Shannon capacity theorem, the power control variables in data rate formulation are not in convex form, which causes this optimization problem is a NP-Hard problem. However, we successfully proposed algorithms to solve this problem by using geometric programming and some mathematic approximation techniques. MATLAB simulations also show that our proposed algorithms can converge to solutions in small number of iterations while enhancing total data rate.
+						p.content  - #[a.email(href = "static/images/projects/Power_Project_Report.pdf" target="_blank") Report]
+
+					li.projects__item
+						img(src="static/images/projects/AR.gif")
+						h4 Augmented Reality
+						p.technique #[b Techniques]: C++, OpenGL
+						p.content We built an application that can recognize human skeleton’s positions and then can interact with virtual objects using this information. Firstly, we used Kinect as sensor to detect human depth information. The human depth information then reconstructed to human skeleton’s positions using OpenNI Nite2 library. On the other hand, we used OpenGL to create virtual 3D model. By using the human depth information, the human skeleton's position, and the positions of the virtual objects, the objects in far distance were filtered out to create realistically visual effect. In addition, by using these data and information, user can also control the virtual objects in real time.
+						p.content  - #[a.email(href = "https://github.com/paulhong01/Augmented-Reality" target="_blank") Source Code]
+
+					li.projects__item
+						.App
+							img(src="static/images/projects/Travel_Project.gif" width = "200"  height="250")
+						h4 Group Manager Android App
+						p.technique #[b Techniques]: Java, Android
+						p.content Group Manager is an Android App that provides a platform for group members to manage their projects in more convenient way. We provide two modes for users to manage their tasks. In the project mode, users can manage all the tasks that belong to the project. In the to-do list mode, users can manage their own tasks. Since this App supports for multiple users logging in simultaneously, we also wrote a script using Java to manage user's data in the server side.
+
+					li.projects__item
+						img(src="static/images/projects/Android_Project.gif" width = "250px" height="250px")
+						h4 Group Manager Android App
+						p.technique #[b Techniques]: Java, Android
+						p.content Group Manager is an Android App that provides a platform for group members to manage their projects in more convenient way. We provide two modes for users to manage their tasks. In the project mode, users can manage all the tasks that belong to the project. In the to-do list mode, users can manage their own tasks. Since this App supports for multiple users logging in simultaneously, we also wrote a script using Java to manage user's data in the server side.
