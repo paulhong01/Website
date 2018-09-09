@@ -985,6 +985,12 @@ a:hover {
 	left: 70%;
 }
 
+.experiences__item p.contentp {
+	margin-bottom: 10px;
+	line-height: 1.5em;
+	font-style: normal;
+}
+
 .experiences__item:before {
 	position: absolute;
 	left: -10px;
