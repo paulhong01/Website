@@ -10,7 +10,7 @@ mixin projects()
 						img(src="static/images/projects/OS.gif")
 						h4 Weenix Operating System
 						p.technique #[b Techniques]: C, GDB, Operating System
-						p.content Weenix is a Unix like operating system.
+						p.content Weenix is a small Unix-like operating system. It is compiled into x86 and runs in the QEMU emulators on Ubuntu. We implemented the following kernel functionalities to make it works. Firstly, multiple processes, threads, and scheduler is implemented. To simplify some concurrency issues, one thread per process is performed in the kernel. Then, the file system is implemented. File system operations involve looking up a given block of an inode,then reading or modifying that block. Finally, virtual memory management is performed. Virtual memory management is a key component for user-space memory management.
 
 					li.projects__item
 						img(src="static/images/projects/Wireless_Power_Project.png")
